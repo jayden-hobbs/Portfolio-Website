@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "it-courses",
+    "title": "IT Certify Courses",
+    "summary": "CompTIA, Cisco, Microsoft and more.",
+    "tags": ["Courses", "CompTIA"],
+    "date": "Feb 2025 - Present",
+    "image": "/assets/it-certify/icon.png",
+    "hero": "/assets/it-certify/logo.png",
+    "attachments": [
+      {"name": "CompTIA Tech+ Notes", "url": "/assets/it-certify/comptia-tech-notes.pdf"},
+      {"name": "ITIL Foundation Notes", "url": "/assets/it-certify/itil-foundation-notes.pdf"}
+    ],
+    "links": [
+        {"name": "CompTIA Tech+ Certificate", "url": "https://jaydenhobbs.xyz/certificates/comptiatech.pdf"},
+        {"name": "ITIL Foundation Certificate", "url": "https://jaydenhobbs.xyz/certificates/ITIL-Foundation.pdf"}
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ project.title }} — Cyber Portfolio</title>
+  <meta name="description" content="{{ project.summary }}" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand"><a class="logo" href="/">>{_}</a><h1>Jayden's Cyber Portfolio</h1></div>
+    <nav class="nav"><a href="/">Home</a></nav>
+  </header>
+
+  <main class="container">
+    <article class="layout">
+      <div class="content">
+        {% if project.hero %}
+          <figure class="hero-img fancy-hero">
+            <img src="{{ project.hero }}" alt="{{ project.title }} hero image" />
+          </figure>
+        {% endif %}
+        <h2>{{ project.title }}</h2>
+        {% if project.date %}
+          <p class="project-date">{{ project.date }}</p>
+        {% endif %}
+        <p class="muted">{{ project.summary }}</p>
+        <div class="meta">{% for t in project.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+        {{ body_html | safe }}
+      </div>
+
+      <aside class="sidebar">
+        <section class="panel">
+          <h3>Attachments</h3>
+          <ul>
+            {% if project.attachments and project.attachments|length > 0 %}
+              {% for a in project.attachments %}
+              <li><a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.name }}</a></li>
+              {% endfor %}
+            {% else %}
+              <li>No attachments yet.</li>
+            {% endif %}
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h3>Links</h3>
+          <ul>
+            {% for l in project.links %}
+              <li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a></li>
+            {% else %}
+              <li>No Links available</li>
+            {% endfor %}
+          </ul>
+        </section>
+
+  </ul>
+</section>
+
+      </aside>
+    </article>
+  </main>
+
+  <script defer src="/theme.js"></script>
+</body>
+</html>
