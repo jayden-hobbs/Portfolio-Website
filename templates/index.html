@@ -14,11 +14,11 @@
 <body>
   <header class="header">
     <div class="brand">
-      <a class="logo" href="/">>{_}</a> 
+      <a class="logo" href="/">>()</a> 
       <h1>Jayden's Cyber Portfolio</h1>
     </div>
     <nav class="nav">
-      <a href="index.html">Home</a>
+      <a href="/index">Home</a>
     </nav>
   </header>
 
@@ -28,7 +28,7 @@
     <h3>Projects</h3>
     <div class="grid">
       {% for p in projects %}
-      <a class="card" href="/projects/{{ p.slug }}.html">
+      <a class="card" href="/projects/{{ p.slug }}">
         {% if p.image %}
           <div class="card-img">
             <img src="{{ p.image }}" alt="{{ p.title }} preview" loading="lazy" />
