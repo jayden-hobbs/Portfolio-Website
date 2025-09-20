@@ -1,5 +1,20 @@
 [
   {
+    "slug": "yt-to-mp4",
+    "title": "YouTube to MP4 Converter",
+    "summary": "Easily convert YouTube videos to MP4 format.",
+    "tags": ["YouTube", "Video", "Converter"],
+    "date": "Sept 2025",
+    "image": "/assets/yt-to-mp4/icon.webp",
+    "hero": "/assets/yt-to-mp4/icon.webp",
+    "attachments": [
+      {"name": ".exe File", "url": "/assets/yt-to-mp4/main.exe"}
+    ],
+    "links": [
+        {"name": "GitHub Repo", "url": "https://github.com/jayden-hobbs/YouTube_to_MP4"}
+    ]
+  },
+  {
     "slug": "it-courses",
     "title": "IT Certify Courses",
     "summary": "CompTIA, Cisco, Microsoft and more.",

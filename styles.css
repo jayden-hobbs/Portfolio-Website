@@ -171,3 +171,4 @@ html, body {
 .light .glitch {
   text-shadow: 0 0 6px rgba(106,90,205,.35), 0 0 12px rgba(0,209,255,.2);
 }
+.sidebar .panel a { color: #66b3ff;}
